@@ -5,7 +5,6 @@ def add(a1,a2):
     '''
     Adds two numbers together
     '''
-    toReturn = 0
     toReturn = a1 + a2
     return toReturn
 
@@ -13,7 +12,7 @@ def sub(a1,a2):
     '''
     Subtracts a2 from a1
     '''
-    toReturn = 0
+    toReturn = a1 - a2
     # add your code here
     return toReturn
 
@@ -21,7 +20,7 @@ def mult(a1,a2):
     '''
     Multiplies a1 by a2
     '''
-    toReturn = 0
+    toReturn = a1 * a2
     # add your code here
     return toReturn
 
@@ -29,7 +28,7 @@ def div(a1,a2):
     '''
     Divides a1 by a2
     '''
-    toReturn = 0
+    toReturn = a1 / a2
     # add your code here
     return toReturn
 
@@ -37,7 +36,7 @@ def floorDiv(a1,a2):
     '''
     Divides a1 by a2 with remainder rounded down
     '''
-    toReturn = 0
+    toReturn = a2 % a1
     # add your code here
     return toReturn
 
@@ -46,7 +45,7 @@ def mod(a1,a2):
     Returns the remainder of a1 divided by a2
     e.g., mod(5,3) = 2, mod(15,5) = 0, mod(15,4) = 3
     '''
-    toReturn = 0
+    toReturn = a2 % a1
     # add your code here
     return toReturn
 
@@ -54,7 +53,7 @@ def exp(a1,a2):
     '''
     Returns the a1 to the a2 power (exponent)
     '''
-    toReturn = 0
+    toReturn = a1^a2
     # add your code here
     return toReturn
 
@@ -63,7 +62,7 @@ def orderOperations(a1,a2,a3):
     Returns (a1 plus a2) multiplied by a3
     i.e., changes normal order or operations 
     '''
-    toReturn = 0
+    toReturn = (a1+a2)*a3
     # add your code here
     return toReturn
 
@@ -71,7 +70,7 @@ def whichType(t):
     '''
     Returns the python data type of t
     '''
-    toReturn = ''
+    toReturn = 'type(t)'
     # add your code here
     return toReturn
 
@@ -79,7 +78,7 @@ def convertInt(i):
     '''
     Converts i to an integer
     '''
-    toReturn = 0
+    toReturn = int(i)
     # add your code here
     return toReturn
 
@@ -87,7 +86,7 @@ def convertFloat(f):
     '''
     Converts f to a float
     '''
-    toReturn = 0.0
+    toReturn = float(f)
     # add your code here
     return toReturn
 
@@ -95,7 +94,7 @@ def convertStr(s):
     '''
     Converts s to a string
     '''
-    toReturn = ''
+    toReturn = 'str(s)'
     # add your code here
     return toReturn
 
@@ -103,7 +102,7 @@ def concat(s1,s2):
     '''
     Concatenates (string) s2 to the end of s1
     '''
-    toReturn = ''
+    toReturn = 'str(s1+s2)'
     # add your code here
     return toReturn
 
@@ -111,7 +110,7 @@ def whichChar(s,a):
     '''
     Returns the character at position a of string s
     '''
-    toReturn = ''
+    toReturn = 's[a]'
     # add your code here
     return toReturn
 
@@ -119,7 +118,7 @@ def substr(s,a1,a2):
     '''
     Returns a substring of s (from position a1 to a2)
     '''
-    toReturn = ''
+    toReturn = 's[a1:a2]'
     # add your code here
     return toReturn
 
@@ -127,7 +126,7 @@ def reverseStr(s):
     '''
     Returns a string which is a reversed version of s
     '''
-    toReturn = ''
+    toReturn = 's[::-s]'
     # add your code here
     return toReturn
 
@@ -135,7 +134,7 @@ def isIn(l,e):
     '''
     Returns true if element e is in list l
     '''
-    toReturn = ''
+    toReturn = 'l in e'
     # add your code here
     return toReturn
 
@@ -143,7 +142,7 @@ def randomElement(l):
     '''
     Returns a random element of list l
     '''
-    toReturn = ''
+    toReturn = 'random.choice[l]'
     # add your code here
     return toReturn
 
@@ -151,7 +150,7 @@ def randomNumber():
     '''
     Returns a random number between 1000 and 9999
     '''
-    toReturn = 0
+    toReturn = random.randint(1000,9999)
     # add your code here
     return toReturn
 
@@ -159,7 +158,7 @@ def reverseList(l):
     '''
     Returns a list which is a mirror of l (each element is present in reverse order from l)
     '''
-    toReturn = []
+    toReturn = l[::1]
     # add your code here
     return toReturn
 
@@ -168,6 +167,7 @@ def shuffleList(l):
     Returns a list which has all the elements of l in a random order
     '''
     toReturn = []
+    random.shuffle(l,[random])
     # add your code here
     return toReturn
 
@@ -175,7 +175,7 @@ def listUntil(a):
     '''
     Returns a list contains numbers from 0 to a
     '''
-    toReturn = []
+    toReturn = list (a)
     # add your code here
     return toReturn
 
